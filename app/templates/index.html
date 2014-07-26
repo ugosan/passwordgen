@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Image based password generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css')}} " />
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Image-based password generator <small>uhu!</small></h1>
+</div>
+
+<!-- Pricing Tables - START -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="text-center">{{word1}}</h3>
+                    <a class="btn btn-lg btn-block btn-success">Change Word</a>
+                </div>
+                <div class="panel-body text-center">
+                    <img src="{{images1[0]}}"/>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                   
+                </ul>
+                <div class="panel-footer">
+                    <a class="btn btn-lg btn-block btn-success">Change Image</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="text-center">{{word2}}</h3>
+                    <a class="btn btn-lg btn-block btn-success">Change Word</a>
+                </div>
+               <div class="panel-body text-center">
+                   <img src="{{images2[0]}}"/>
+               </div>
+               <ul class="list-group list-group-flush text-center">
+                  
+               </ul>
+               <div class="panel-footer">
+                   <a class="btn btn-lg btn-block btn-success">Change Image</a>
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="text-center">{{word3}}</h3>
+                    <a class="btn btn-lg btn-block btn-success">Change Word</a>
+                </div>
+                <div class="panel-body text-center">
+                    <img src="{{images3[0]}}"/>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                   
+                </ul>
+                <div class="panel-footer">
+                    <a class="btn btn-lg btn-block btn-success">Change Image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pricing Tables - END -->
+
+</div>
+
+</body>
+</html>
